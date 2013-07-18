@@ -1,0 +1,200 @@
+\documentclass{beamer}
+%\documentclass[handout]{beamer}
+\setbeamertemplate{navigation symbols}{}
+
+\mode<presentation>
+{
+  \usetheme{default}
+  \useinnertheme{circles}
+  %\usetheme{plain}
+  %  \usetheme{default}
+  % or ...
+  % makes uncovered text transparent
+  %\setbeamercovered{transparent}
+  % or whatever (possibly just delete it)
+  \setbeamertemplate{frametitle}
+  { 
+    \begin{centering}
+     \color{blue}
+     %\textbf
+     {\insertframetitle}
+     %\texttt{\insertframetitle}
+     \par
+    \end{centering}
+  }
+}
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts,amssymb,amsmath,alltt,psfrag,stmaryrd}
+\usepackage{alltt}
+% newcommands etc
+\renewcommand{\ttdefault}{cmtt}
+\newenvironment{ttbox}{\begin{alltt}\ttbraces\small\tt}%
+                      {\end{alltt}}
+%the new definition of \. suppresses line breaks
+\def\ttbraces{\let\.=\nobreak\chardef\{=`\{\chardef\}=`\}\chardef\|=`\\}
+% used here
+\newcommand{\symb}[1]{\makebox{\it #1}} 
+\newcommand\dist{\ensuremath{\to_\|}}
+\newcommand\ttevalsto{\mbox{\( \evalsto\ \)}}
+
+\title[] % (optional, use only with long paper titles)
+{BSc Computer Science -- First Year
+}
+
+\author[First Year Team] % (optional, use only with lots of authors)
+{Tony Clark\\
+Ed Currie\\
+Bob Fields\\
+Florian Kammueller\\
+Martin Loomes\\
+Rui Loureiro\\
+Ralph Moseley\\
+Franco Raimondi
+}
+
+
+
+\institute[University of Middlesex] % (optional, but mostly needed)
+{\inst{}%
+  Middlesex University London\\[2ex]
+{\includegraphics[height=1cm]{Middlesex_University_logo.png}}
+}
+\date[October 2013]% (optional, should be abbreviation of conference name)
+{{\footnotesize 1. October 2013}}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\setbeamertemplate{footline}{
+  \begin{beamercolorbox}[wd=0.5\paperwidth,ht=0.5ex,dp=2ex,left]{date
+      in head/foot}
+    \hspace*{1mm}\insertframenumber
+  \end{beamercolorbox}
+}
+
+
+
+
+
+\begin{frame}
+\frametitle{Welcome to the Computer Science First Year}
+\begin{itemize}
+\item Key Aims of First Year
+\item How To study it
+\item LaTeX Challenge 
+\item Prices
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Overview}
+ \tableofcontents
+\end{frame}
+
+\section{A Typical Week}
+
+%% Delete this, if you do not want the table of contents to pop up at
+%% the beginning of each subsection:
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>
+    \frametitle{Overview}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{frame}
+\frametitle{Purpose of the Year}
+There is one simple question we must address:
+\begin{quote}
+{\it Is attendance at sessions compulsory?}
+\end{quote}
+%
+The answer is simple:
+\begin{quote}
+{\it No, you are perfectly free to fail if you want to.}
+\end{quote}
+%
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.6\columnwidth]{learning_pyramid}
+\caption{The Learning Pyramid}
+\end{figure}
+\end{frame}
+
+\section{How To Study the First Year}
+
+
+\section{The LaTeX Challenge}
+
+\begin{frame}
+\frametitle{LaTeX Challenge}
+\begin{itemize}
+\item Task: Produce a Latex documentation of Middlesex University
+\item \alert{Mo 1.10.} Introduction: Martin Loomes Overview lecture
+\item \alert{Tu 2.10.} Preparation:
+\begin{itemize}
+\item This lecture (Intro to CS program \& LaTeX chalLenge)  
+\item Break out into two hour sessions in groups of 30/60 
+\item Group get together: size 3 students
+\item Start project brainstorming
+\item Learn LaTeX basics
+\end{itemize}
+\item Material/Support/Equipment:
+\begin{itemize}
+\item Groups work on Tuesday, Wednesday, Thursday 
+\item LaTeX clinic on Wednesday \& Thursday 10-15pm in H10X
+\end{itemize}
+\item Evaluation Peer Review \alert{Th 4.10.}
+\item Prices \alert{Fr 5.10.} 
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{LaTeX Challenge: Topic}
+\begin{itemize}
+\item Subject is Middlesex University
+\item Anything goes!
+\item Examples: 
+\begin{itemize}
+\item The university crest: history and changes
+\item Where are the best coffee places
+\item How does the university work
+\item Student unions and sports
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{LaTeX Challenge: How To?}
+\begin{itemize}
+\item LaTeX: \url{http://www.latex-project.org}
+\item In Labs: MicTeX \url{http://miktex.org}
+\item Examples: github \alert{$\Rightarrow$} This talk is written in LaTeX
+      and is available amongst other examples in the github
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{LaTeX Challenge: Prices}
+\begin{itemize}
+\item Peer Evaluation and Presentation of Projects Thursday afternoon
+\item Price awards Friday
+\end{itemize}
+\end{frame}
+
+
+
+\end{document}
+
